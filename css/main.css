@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700');
+
+:root {
+    /* --fg-color: #33FF33; */
+    --fg-color: #FFBB00;
+    --bg-color: #282828;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+
+    min-height: 100vh;
+}
+
+@media (min-width: 1080px) {
+    body {
+        width: 1080px;
+    }
+}
+
+footer {
+    margin-top: auto;
+}
+
+a:link {
+    color: var(--fg-color);
+}
+
+a:visited {
+    color: var(--fg-color);
+}
+
+#navMenu {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#navMenu > li {
+    display: inline-block;
+}
+
+#breadcrumbMenu {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#breadcrumbMenu > li {
+    display: inline-block;
+}
+
+#breadcrumbMenu > li:nth-child(n+2):before {
+    content: "/";
+}
