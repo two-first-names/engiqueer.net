@@ -11,7 +11,7 @@ module.exports = function (eleventyConfig) {
     linkify: true,
   };
   const mdLib = markdownIt(mdOpts)
-    .use(require("markdown-it-abbr"))
+    .use(require("./_lib/markdown-it-abbr"))
     .use(require("markdown-it-footnote"))
     .use(require("markdown-it-anchor"));
   eleventyConfig.setLibrary("md", mdLib);
