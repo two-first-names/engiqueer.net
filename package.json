@@ -16,5 +16,8 @@
     "markdown-it-abbr": "^2.0.0",
     "markdown-it-anchor": "^9.0.1",
     "markdown-it-footnote": "^4.0.0"
+  },
+  "devDependencies": {
+    "luxon": "^3.4.4"
   }
 }

@@ -1,0 +1,16 @@
+---
+title: Week Notes
+eleventyNavigation:
+  key: Week Notes
+---
+{%- for post in collections.weeknotes -%}
+<article>
+  <h3>
+    <a href="{{ post.url }}" title="{{post.data.title}}">
+      {{ post.data.title}}
+    </a>
+  </h3>
+  {%- if post.data.excerpt -%}<p>{{ post.data.excerpt }}</p>{%- endif -%}
+  <p>Written by {% authorName post.data.author %} on <time datetime="{{ post.date | date }}">{{ post.date | date: "d LLLL y" }}</time>.</p>
+</article>
+{%- endfor -%}
